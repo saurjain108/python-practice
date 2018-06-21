@@ -7,8 +7,10 @@ for i in (a.read().split()):
 #	print(i)
 	b.write(i)
 	b.write('\n')
+#a.close()
 #b.close()
 #print('\n\n\n')
-#b.open('bbb.txt','r')
-#print(b.read())
+
+b=open('bbb.txt','r')
+print(b.read())
 
