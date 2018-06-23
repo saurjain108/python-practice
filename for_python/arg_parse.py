@@ -1,6 +1,6 @@
 
 import argparse
-
+import sys
 parser = argparse.ArgumentParser(description = 'read the file in reverse order')
 parser.add_argument('filename', help ='the file to read')
 parser.add_argument('--limit', '-l',type = int , help = 'the number of lines to be read')
@@ -12,6 +12,7 @@ try:
 	limit = args.limit
 except FileNotFoundError as Err:
 	print(f"Error: {Err}")
+	sys.exit(2)
 else:
 
 	with f:
