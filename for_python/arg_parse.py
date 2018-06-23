@@ -7,12 +7,19 @@ parser.add_argument('--limit', '-l',type = int , help = 'the number of lines to 
 parser.add_argument('--version', '-v', action='version', version='%(prog)s 1.0')
 
 args = parser.parse_args()
-with open(args.filename) as f:
-	lines = f.readlines()
-	lines.reverse()
+try:
+	f = open(args.filename)
+	limit = args.limit
+except FileNotFoundError as Err:
+	print(f"Error: {Err}")
+else:
+
+	with f:
+		lines = f.readlines()
+		lines.reverse()
 	
-	if args.limit:
-		lines = lines[:args.limit]
-	for line in lines:
-		print(line.strip()[::-1])
+		if args.limit:
+			lines = lines[:args.limit]
+		for line in lines:
+			print(line.strip()[::-1])
 	
