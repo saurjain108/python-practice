@@ -1,7 +1,7 @@
 import os
 
 way = r"/home/raunak/for_python"
-
+print(os.system('ls'))
 for i in (os.listdir(way)):
 	print(i)
 for roots, dirs, files in os.walk(way):
