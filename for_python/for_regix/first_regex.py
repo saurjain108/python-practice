@@ -17,3 +17,12 @@ print(b)
 # the '\W' matches with the any character except the \w group
 c = re.search(r'R\Wunak', 'R@unak').group()
 print (c)
+
+#the \s matches with single white space
+d = re.search(r'hi\shello', 'hi hello').group()
+print(d)
+
+#the \S matches with single white space which is not part of \s
+e = re.search(r'raun\Sk', 'raunak').group()
+print(e)
+ 
