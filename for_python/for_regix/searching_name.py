@@ -12,3 +12,4 @@ print(re.findall(r'\w*, \w+', data))"""
 print(re.findall(r'[\w\d+.-]+@[\d\w.]+',data)) 
 print(re.findall(r'\b[trehous]{9}\b',data, re.IGNORECASE)) # finds all treehouse words
 print(re.findall(r'\b@[-\b\w.]*[^gov\t]+\b',data,re.IGNORECASE)) # ignores the gov 
+print(re.findall(r'\b[-\w]+,\s[-\w ]+[^\t\n]',b,re.X))# searching all names
