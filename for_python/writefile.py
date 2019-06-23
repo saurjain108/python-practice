@@ -3,7 +3,7 @@
 a = open('abc.txt','r')
 # opened the file which we already have available in the sysyem
 
-b = open('new_abc.txt', 'w')
+b = open('newwwwwwwwwwwwwwwwwwww_abc.txt', 'w')
 #created a file in which we are going to write the data
 
 b.write(a.read())
@@ -17,6 +17,4 @@ b= open(b.name, 'r+')
 
 print(b.read())
 #printing the content of the new file
-
-
 

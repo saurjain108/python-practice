@@ -1,0 +1,16 @@
+
+hello
+bello 
+blabla
+blablabla
+ahahah
+lolz
+rolf
+
+testing
+Docker
+Kubernetes
+Ansible
+Chef
+Python
+Jenkins
