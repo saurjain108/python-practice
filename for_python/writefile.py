@@ -1,4 +1,4 @@
-#this is use for writting the conent of one file into anotheer file
+#this is use for writting the conent of one file into anotheer filee
 
 a = open('abc.txt','r')
 # opened the file which we already have available in the sysyem
